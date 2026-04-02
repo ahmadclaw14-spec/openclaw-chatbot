@@ -1,0 +1,6 @@
+flask==3.0.0
+transformers==4.35.2
+torch==2.1.1
+sentence-transformers==2.2.2
+llama-cpp-python==0.2.25
+reportlab==4.0.7

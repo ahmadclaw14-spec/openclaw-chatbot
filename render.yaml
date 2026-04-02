@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: openclaw-chatbot
+    runtime: python3
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 web_server_secure.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: OPENCLAW_LLM_MODE
+        value: transformers
+      - key: PYTHON_VERSION
+        value: "3.11.4"
