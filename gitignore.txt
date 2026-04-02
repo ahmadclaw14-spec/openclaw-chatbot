@@ -1,0 +1,36 @@
+# Security-sensitive files
+.venv/
+.env
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Memory and logs
+memory/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (never commit these)
+*.key
+*.pem
+*.p8
+secrets.json
+.env.local
+.env.*.local
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
